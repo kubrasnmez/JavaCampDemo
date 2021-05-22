@@ -28,4 +28,5 @@ public class ProductsController {
 		return this.productService.getAll();
 		
 	}
+
 }
