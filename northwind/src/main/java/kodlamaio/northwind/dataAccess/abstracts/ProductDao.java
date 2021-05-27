@@ -10,8 +10,8 @@ import kodlamaio.northwind.entities.concretes.Product;
 public interface ProductDao extends JpaRepository<Product,Integer>{
 
 	Product getByProductName(String productName);
-	Product getByProductNameAndCategory(String productName, int categoryId);
-	List<Product> getByProductNameOrCategory(String productName, int categoryId);
+	Product getByProductNameAndCategory_CategoryId(String productName, int categoryId);
+	List<Product> getByProductNameOrCategory_CategoryId(String productName, int categoryId);
 	List<Product> getByCategoryIn(List<Integer> categories);
 	List<Product> getByProductNameContains(String productName);
 	List<Product> getByProductNameStartsWith(String productName);
